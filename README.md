@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://yelous25.github.io/my-team-challenge">
+    <a href="https://yelous25.github.io/my-team-page-challenge/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/hvOEE42DGjNPFvmHHJQN">
       Solution
     </a>
     <span> | </span>
@@ -36,12 +36,11 @@
 
 ## Overview
 
-![screenshot](https://github.com/yelous25/404-not-found/blob/master/images/Screenshot.png?raw=true)
+![screenshot](https://github.com/yelous25/my-team-page-challenge/raw/master/pictures/Screenshot.png)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 -   [Html]
 -   [Css]
 
