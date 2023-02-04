@@ -1,0 +1,333 @@
+:root {}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins-Regular.ttf) format('truetype');
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url(./fonts/PTSerif-Regular.ttf) format('truetype');
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat-Regular.ttf) format('truetype');
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* Main Container  */
+.container {
+    margin: 0;
+}
+
+#main_container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 920px;
+    height: 100%;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    margin: auto;
+}
+
+/* Header */
+#header_block {
+    display: flex;
+    justify-content: space-between;
+
+    width: auto;
+
+    margin-top: 110px;
+    margin-bottom: 96px;
+}
+
+
+/*
+* Title
+*/
+#title_block h1 {
+    margin: 0px;
+
+    font-family: 'PT Serif';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47.7px;
+    letter-spacing: -0.045em;
+}
+
+
+/**
+* Who are you
+*/
+#who_are_you_block {
+    font-family: 'Poppins';
+    line-height: 27px;
+}
+
+#who_are_you_block h2 {
+    margin: 0px;
+
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#who_are_you_block p {
+    margin: 0px;
+
+    width: 436px;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/**
+* Team Menbers Gallery
+*/
+#gallery_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: auto;
+}
+
+.gallery_items {
+    display: flex;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+#item_2 {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#item_4,
+#item_6 {
+    margin-top: 27px;
+}
+
+#item_5 {
+    margin-top: 127px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#gallery_block figure {
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.member_picture {
+    width: 235px;
+    margin: 0px;
+}
+
+.member_name {
+    display: inline;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 15px;
+
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.member_function {
+
+    margin: 0px;
+
+    width: fit-content;
+    height: fit-content;
+
+    writing-mode: vertical-lr;
+    font-family: 'PT Serif';
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+/*
+* Footer Block
+*/
+#footer_block {
+    margin-top: 144px;
+    padding-bottom: 24px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+#footer_block a {
+    color: inherit;
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:950px) {
+
+    #main_container {
+        max-width: 570px;
+
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
+    #header_block {
+        flex-direction: column;
+
+        width: auto;
+
+        margin-top: 71px;
+        margin-bottom: 71px;
+    }
+
+    #who_are_you_block {
+        margin-top: 38px;
+    }
+
+
+    #item_2{
+        margin:0px;
+        margin-top: 60px;
+    }
+
+    #item_3,
+    #item_5 {
+        margin:0px;
+        margin-top: 16px;
+    }
+
+    #item_4,
+    #item_6 {
+        margin:0px;
+        margin-top: 76px;
+    }
+
+    #footer_block {
+        margin-top: 123px;
+    }
+    
+}
+
+@media screen and (max-width:660px) {
+
+    #main_container {
+        max-width: 400px;
+        min-width: 340px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        margin: auto;
+    }
+
+    #header_block {
+        flex-direction: column;
+
+        width: auto;
+
+        margin-top: 71px;
+        margin-bottom: 50px;
+    }
+
+    #who_are_you_block {
+        margin-top: 38px;
+    }
+
+    #who_are_you_block p {
+        margin: 0px;
+
+        width: 333px;
+        height: 87px;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    #item_2 {
+        margin:0px;
+        margin-top: 48px;
+    }
+
+    #item_3,
+    #item_5 {
+        margin:0px;
+        margin-top: 16px;
+    }
+
+    #item_4,
+    #item_6 {
+        margin:0px;
+        margin-top: 64px;
+    }
+
+    #footer_block {
+        margin-top: 123px;
+    }
+
+    #gallery_block figure {
+        margin-right: 6.5px;
+    }
+
+    .member_picture {
+        width: 138px;
+    }
+
+    .member_name {
+        margin-top: 10px;
+
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+
+    .member_function {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    #footer_block {
+        display: inline-flex;
+
+        margin-top: 134px;
+        margin-bottom: 24px;
+    }
+}

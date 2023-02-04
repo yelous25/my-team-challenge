@@ -1,0 +1,202 @@
+@font-face {
+	font-family: PTSerif;
+	src: url(fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+	font-family: Poppins;
+	src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: Montserrat;
+	src: url(fonts/Montserrat-Regular.ttf);
+}
+
+body {
+	min-width: 23.4375;
+	margin: 0;
+	color: #000000;
+}
+h1,
+h2,
+h3,
+h4 {
+	width: fit-content;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 57.75rem;
+	margin: auto;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	margin-top: 6.875rem;
+	margin-bottom: 6rem;
+}
+
+h1.title {
+	font-family: "PTSerif";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: -0.045rem;
+}
+section.description {
+	width: 26.875rem;
+}
+section.description h2 {
+	margin-bottom: 0.625rem;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 27px;
+	text-transform: uppercase;
+}
+
+section.description p {
+	height: 5.4375rem;
+	margin: 0;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-container > :nth-child(2),
+.main-container > :nth-child(5) {
+	margin: 0 4.125rem;
+	margin-top: 6.1875rem;
+}
+
+.main-container > :nth-child(2) {
+	margin-bottom: 1.6875rem;
+}
+.element {
+	display: flex;
+	height: fit-content;
+}
+
+.element figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	width: fit-content;
+	height: fit-content;
+	margin: 0;
+}
+
+.element figure img {
+	width: 14.875rem;
+}
+
+.element figure figcaption {
+	margin: 0;
+	margin-top: 0.94rem;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+}
+.element h3 {
+	width: fit-content;
+	height: fit-content;
+	margin-left: 0.625rem;
+	font-family: "PTSerif";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	writing-mode: vertical-rl;
+}
+
+.footer-container {
+	align-self: center;
+	width: fit-content;
+	margin-top: 7.1875rem;
+	margin-bottom: 1.5rem;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #a9a9a9;
+}
+.footer-container strong {
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1023px) {
+	.container {
+		width: 34.6875rem;
+	}
+	.header-container {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		margin-top: 6.875rem;
+		margin-bottom: 6rem;
+	}
+
+	.header-container h1.title {
+		margin-bottom: 2.375rem;
+	}
+
+	.main-container > :nth-child(5) {
+		margin: 0;
+	}
+
+	.main-container > :nth-child(2n) {
+		margin: 3rem 0 1rem 1.5625rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 21.3125rem;
+	}
+	.header-container {
+		margin-top: 4.4375rem;
+		margin-bottom: 2.375rem;
+	}
+	section.description {
+		width: 20.8125rem;
+	}
+	.header-container section.description p {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.element figure img {
+		width: 8.67rem;
+	}
+
+	.element figure figcaption {
+		margin-top: 0.625rem;
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.element h3 {
+		margin-left: 0.3925rem;
+		font-size: 10px;
+		line-height: 13px;
+	}
+	.footer-container {
+		margin-top: 8.375rem;
+	}
+}
